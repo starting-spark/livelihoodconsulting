@@ -16,20 +16,36 @@
   <body>
 
       <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h1><a class="title" href="/">
+          {{ site.title | default: site.github.repository_name }}
+          </a></h1>
         <p><i>“All glory comes from daring to begin.”</i>  -Eugene F. Ware</p>
       </header>
 
       <div id="banner">
+        <ul id="banner-nav">
+          <li>
+            <a class="button" href="/about">
+              <strong>About Me</strong>
+            </a>
+          </li>
+          <li class="button">
+            <a href="/rates">
+              <strong>Rates</strong>
+            </a>
+          </li>
+          <li class="button">
+            <a href="/contact">
+              <strong>Contact Me</strong>
+            </a>
+          </li>
+        </ul>
       </div><!-- end banner -->
 
     <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
+      <nav><ul></ul></nav>
       <section>
         {{ content }}
-
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
