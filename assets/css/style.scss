@@ -5,3 +5,26 @@
 .title {
   color: #f3f3f3;
 }
+
+ul#banner-nav {
+  position: fixed;
+  left: 50%;
+  margin-left: -325px;
+}
+
+@media print, screen and (max-width: 720px) {
+  ul#banner-nav {
+    left: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  #banner {
+    display: block;
+    margin-top: -22px;
+  }
+  section {
+    margin-top: 52px;
+  }
+}
